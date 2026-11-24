@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <title>Cute cartoon mole</title>
+  <!-- Transparent background; simple original game character -->
+  <ellipse cx="120" cy="211" rx="78" ry="16" fill="#24150e" opacity=".22"/>
+  <path d="M48 205V112C48 66 80 34 120 34s72 32 72 78v93c0 10-8 18-18 18H66c-10 0-18-8-18-18Z" fill="#8b5737"/>
+  <ellipse cx="120" cy="121" rx="67" ry="76" fill="#b9784b"/>
+  <ellipse cx="120" cy="151" rx="47" ry="35" fill="#e8bd91"/>
+  <ellipse cx="94" cy="111" rx="8" ry="11" fill="#24150e"/>
+  <ellipse cx="146" cy="111" rx="8" ry="11" fill="#24150e"/>
+  <circle cx="97" cy="107" r="3" fill="#fff"/>
+  <circle cx="149" cy="107" r="3" fill="#fff"/>
+  <ellipse cx="120" cy="143" rx="13" ry="10" fill="#593323"/>
+  <path d="M120 153c-5 9-14 12-22 8m22-8c5 9 14 12 22 8" fill="none" stroke="#593323" stroke-width="4" stroke-linecap="round"/>
+  <path d="M77 145 42 137m39 17-38 2m120-11 35-8m-35 17 38 2" fill="none" stroke="#f3dfc8" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="72" cy="73" rx="19" ry="23" fill="#8b5737"/>
+  <ellipse cx="168" cy="73" rx="19" ry="23" fill="#8b5737"/>
+  <ellipse cx="72" cy="75" rx="10" ry="13" fill="#e8a68f"/>
+  <ellipse cx="168" cy="75" rx="10" ry="13" fill="#e8a68f"/>
+  <path d="M88 188c8 10 19 15 32 15s24-5 32-15" fill="none" stroke="#70432d" stroke-width="5" stroke-linecap="round"/>
+</svg>

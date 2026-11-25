@@ -25,8 +25,8 @@ const popMole = () => {
 
   const inActMole = [...moles].filter((mole) => !mole.classList.contains('active'));
   if (inActMole.length > 0) {
-    const rand = Math.floor(Math.random() * inActMole.length);
-    const mole = inActMole[rand];
+    let rand = Math.floor(Math.random() * inActMole.length);
+    let mole = inActMole[rand];
 
     mole.classList.add('active');
 

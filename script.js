@@ -88,12 +88,16 @@ startBtn.addEventListener('click', () => {
   timerStart();
 });
 
-moles.forEach((mole) => {
-  mole.addEventListener('click', () => {
-    if (gameStatus && mole.classList.contains('active')) {
-      score++;
-      mole.classList.remove('active');
-      scoreDisplay.innerText = score;
-    }
-  });
+const holes = document.querySelectorAll('.hole');
+
+holes.forEach(hole => {
+    hole.addEventListener('click', () => {
+        const mole = hole.querySelector('.mole');
+
+        if (gameStatus && mole.classList.contains('active')) {
+            score++;
+            mole.classList.remove('active');
+            scoreDisplay.innerText = score;
+        }
+    });
 });

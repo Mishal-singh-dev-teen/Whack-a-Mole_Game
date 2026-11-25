@@ -1,3 +1,5 @@
+
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +8,8 @@
 
 body {
     min-height: 100vh;
-    background: #101b16;
-    color: white;
+    background: #FFF5E6;
+    color: #354052;
     font-family: Arial, sans-serif;
 
     display: flex;
@@ -15,6 +17,7 @@ body {
     align-items: center;
 
     padding: 15px;
+    position: relative;
 }
 
 /* Main container */
@@ -22,16 +25,24 @@ body {
     width: 100%;
     max-width: 480px;
     text-align: center;
+
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 22px;
+    border: 2px solid #F3E4CE;
+
+    box-shadow: 0 8px 25px rgba(120, 85, 45, 0.10);
 }
 
 /* Header */
 .game-header h1 {
     font-size: 32px;
     margin-bottom: 8px;
+    color: #F16B68;
 }
 
 .game-header p {
-    color: #b5c5ba;
+    color: #89919D;
     font-size: 14px;
 }
 
@@ -45,25 +56,30 @@ body {
 
 .score {
     flex: 1;
-    background: #203b2c;
+    background: #FFF0BF;
     padding: 12px;
     border-radius: 12px;
 }
 
+.game-info .time {
+    background: #DDF2FF;
+}
+
 .score h3 {
     font-size: 14px;
-    color: #b5c5ba;
+    color: #79633C;
     margin-bottom: 5px;
 }
 
 .score p {
     font-size: 23px;
     font-weight: bold;
+    color: #354052;
 }
 
 /* Timer red state */
 #timer.time-up {
-    color: #ff4d4d;
+    color: #F04444;
 }
 
 /* Game board */
@@ -72,9 +88,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
 
-    background: #315d3d;
+    background: #DDF3DF;
     padding: 16px;
     border-radius: 18px;
+    border: 2px solid #C6E8C9;
 }
 
 /* Holes */
@@ -83,11 +100,13 @@ body {
     width: 100%;
     aspect-ratio: 1;
 
-    background: #180e09;
-    border: 10px solid #53301f;
+    background: #38271F;
+    border: 9px solid #A87955;
 
     border-radius: 50%;
     overflow: hidden;
+
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 /* Mole */
@@ -121,23 +140,54 @@ body {
     border: none;
     border-radius: 10px;
 
-    background: #63c77b;
-    color: #102016;
+    background: #FF7777;
+    color: white;
 
     font-size: 15px;
     font-weight: bold;
 
     cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
 }
 
 #start-btn:hover {
-    background: #4eae67;
+    background: #F15F65;
+    transform: translateY(-2px);
+}
+
+#start-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+}
+
+/* Personal signature */
+.signature {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    margin-top: 18px;
+    text-align: right;
+
+    font-family: "Brush Script MT", cursive;
+    font-size: 23px;
+    font-style: italic;
+
+    color: #9272C7;
+    transform: rotate(-5deg);
+}
+
+.signature span {
+    color: #E9A23B;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
 }
 
 /* Tablet */
 @media (max-width: 500px) {
     .game-container {
         max-width: 400px;
+        padding: 20px;
     }
 
     .game-header h1 {
@@ -154,6 +204,10 @@ body {
 @media (max-width: 350px) {
     body {
         padding: 8px;
+    }
+
+    .game-container {
+        padding: 14px;
     }
 
     .game-header h1 {
@@ -178,6 +232,7 @@ body {
 @media (max-height: 650px) {
     .game-container {
         max-width: 400px;
+        padding: 16px;
     }
 
     .game-header h1 {
@@ -196,5 +251,9 @@ body {
     #start-btn {
         margin-top: 12px;
         padding: 10px 28px;
+    }
+
+    .signature {
+        margin-top: 10px;
     }
 }
